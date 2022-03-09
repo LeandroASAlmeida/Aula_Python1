@@ -7,16 +7,12 @@
 
 nome = input("INFORME SEU NOME: ")
 ano = int(input("INFORME SEU ANO DE NASCIMENTO: "))
-idade = 2022 - ano
+anoatual = 2022
+idade = anoatual - 2004
 
 
-if (ano >= 2004):
-     print(nome  + ' vocÊ é apto a dirigir' )
+if (anoatual - ano >= 18):
+     print(nome  + ' você é apto a dirigir' )
 
 else:
-    (ano <= 2005):
-    print(nome  + 'nao pode dirigir. Faltam' + (str(18-(2022-ano))) + 'anos para dirigir')
-
-
-
-
+     print(nome  + ' nao pode dirigir.Faltam ' + (str(18-(2022-ano))) + ' anos para dirigir')
